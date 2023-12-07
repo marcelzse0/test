@@ -1,12 +1,115 @@
 <!DOCTYPE html>
 	<html lang="pl-PL">
 	<html>
-		<head>
-			<meta charset="utf-8">
-			<title>formularz-Smagieł</title>
-		</head>
-	<body>
-	tutaj będzie formularz<br>
+			<head>
+		<title>formularz-Smagieł</title>
+		<meta charset="UTF-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   		<title>Formularz - Smagieł</title>
+    		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+		
+			</head>
+		<body style="background-color: #526e2a;">
+            
+		tutaj będzie formularz<br>
+		<h1 style="text-align: center;font-family: arial;">Anonimowa ankieta<br>satysfakcji z komunikacji<br>miejskiej</h1>
+
+            	<form enctype="text/plain" action="mailto:marcel.sma@gmail.com" subject="formularz_dane" method="Post">
+
+            	<table style="font-family: sans-serif;font-size: 120%;">
+          
+
+			<tr>
+		<td style="vertical-align: top;">Gdzie mieszkasz<br>
+		<input type="checkbox" name="Gdzie mieszkasz" value="miasto powyżej 500tyś. mieszkańców">miasto powyżej 500tyś. mieszkańców
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+		<input type="checkbox" name="Gdzie mieszkasz" value="miasto do 200tyś. mieszkańców">miasto do 200tyś. mieszkańców<br>
+		<input type="checkbox" name="Gdzie mieszkasz" value="wieś">wieś<br><br><br>
+		
+			
+            	Wybierz płeć<br>
+		<input type="radio" name="plec" value="mężczyzna">mężczyzna<br>
+		<input type="radio" name="plec" value="kobieta">kobieta<br>
+		<input type="radio" name="plec" value="nie chcę podawać">nie chcę podawać<br><br>
+			
+		<td style="vertical-align: top;">7. Ile razy w ciągu tygodnia<br>korzystasz z komunikacji miejskiej<br>
+		1-2 x w tygodniu<input type="checkbox" name="Ile razy w ciągu tygodnia<br>korzystasz z komunikacji miejskiej" value="1-2 x w tygodniu"><br>
+		5 x w tygodniu<input type="checkbox" name="Ile razy w ciągu tygodnia<br>korzystasz z komunikacji miejskiej" value="5 x w tygodniu"><br>
+		codziennie<input type="checkbox" name="Ile razy w ciągu tygodnia<br>korzystasz z komunikacji miejskiej" value="codziennie"><br>
+		tylko w weekendy<input type="checkbox" name="Ile razy w ciągu tygodnia<br>korzystasz z komunikacji miejskiej" value="tylko w weekendy"><br><br>
+
+		8. Jak oceniasz punktualność<br>komunikacji miejskiej<br>
+		<input type="checkbox" name="Punktualność" value="bardzo dobrze">bardzo dobrze<br>
+		<input type="checkbox" name="Punktualność" value="średnio;">średnio<br>
+		<input type="checkbox" name="Punktualność" value="źle">źle<br>
+			
+			
+			<tr>
+		<td style="vertical-align: top;">Podaj swój wiek<br>
+               	<textarea name="recenzja" rows="1" cols="10">
+			</textarea>
+            	
+
+		<br><br>Twój poziom wykształcenia<br>
+            	<select name="poziom">
+                <option value="podstawowe" >podstawowe</option>
+                <option value="średnie">średnie</option>
+                <option value="wyższe">wyższe</option>
+               
+
+		<br><td style="vertical-align: top;">&nbsp;<br>Napisz co sądzisz o czystości<br>w komunikacji miejskiej<br>
+                <textarea name="recenzja" rows="3" cols="30"></textarea><br><br>
+		
+		
+            		</select>
+            
+            	
+			<tr>
+            	<td style="vertical-align: top;">&nbsp;<br>Czy posiadasz kartę mieszkańca<br>
+           	<input type="checkbox" name="Czy posiadasz kartę mieszkańca" value="tak">tak
+           	<input type="checkbox" name="Czy posiadasz kartę mieszkańca" value="nie">nie<br><br>
+            
+	
+            	<td style="vertical-align: top;">10. Czy twoim zdaniem korzystanie<br>z komunikacji miejskiej jest bezpieczne<br>
+           	<i class="fas fa-thumbs-up" onclick="rate()"></i>
+                <i class="fas fa-thumbs-up" onclick="rate()"></i>
+                <i class="fas fa-thumbs-up" onclick="rate()"></i>
+                <i class="fas fa-thumbs-up" onclick="rate()"></i>
+                <i class="fas fa-thumbs-up" onclick="rate()"></i>
+            		</td></tr>
+        
+           
+            		<tr>
+		<td style="vertical-align: top;">&nbsp;<br>6. Z jakiego środku transportu<br>publicznego korzystasz najczęściej<br>
+		A. tramwaj<input type="checkbox" name="Z jakiego środku transportu publicznego korzystasz najczęściej" value="tramwaj"><br>
+		B. autobus<input type="checkbox" name="Z jakiego środku transportu publicznego korzystasz najczęściej" value="autobus;"><br>
+		C. trolejbus<input type="checkbox" name="Z jakiego środku transportu publicznego korzystasz najczęściej" value="trolejbus"><br>
+		D. SKM<input type="checkbox" name="Z jakiego środku transportu publicznego korzystasz najczęściej" value="SKM"><br>
+		E. pociąg<input type="checkbox" name="Z jakiego środku transportu publicznego korzystasz najczęściej" value="pociąg"><br><br><br><br><br><br>
+			
+			
+			
+            	<td style="vertical-align: top;">11. Czy w ostatnim czasie byłeś<br>świadkiem wydarzenia w komunikacji<br>miejskiej?<br>
+		<input type="radio" name="Czy w ostatnim czasie byłeś świadkiem wydarzenia w komunikacji miejskiej?" value="agresja pasażerów">agresja pasażerów<br>
+		<input type="radio" name="Czy w ostatnim czasie byłeś świadkiem wydarzenia w komunikacji miejskiej?" value="wypadek">wypadek<br>
+		<input type="radio" name="Czy w ostatnim czasie byłeś świadkiem wydarzenia w komunikacji miejskiej?" value="huligańskie wybryki">huligańskie wybryki<br>
+            	<input type="radio" name="Czy w ostatnim czasie byłeś świadkiem wydarzenia w komunikacji miejskiej?" value="kradzież">kradzież<br>
+		<input type="radio" name="Czy w ostatnim czasie byłeś świadkiem wydarzenia w komunikacji miejskiej?" value="żadne">żadne z powyższych<br><br>
+			
+		12. Jak oceniasz ankietę?<br>
+                <textarea name="recenzja" rows="2" cols="30">
+			</textarea>
+	
+
+           		<tr>
+                <td style="text-align: center;"><input type="submit" value="Wyślij" style="height:65px; width:120px; font-size: 40px;">
+                <td style="text-align: center;"><input type="reset" value="Reset" style="height:65px; width:120px; font-size: 40px;"><br>
+            		</tr>
+           
+
+           	 	</table></form><br>
 	<A HREF="indeks.html">Wróć</A>
 	</body>
 </html>
